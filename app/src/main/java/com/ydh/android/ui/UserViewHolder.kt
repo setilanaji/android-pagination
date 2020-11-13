@@ -1,10 +1,12 @@
-package com.ydh.android
+package com.ydh.android.ui
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.ydh.android.R
+import com.ydh.android.model.UserModel
 import kotlinx.android.synthetic.main.user_item.view.*
 
 class UserViewHolder ( view: View) : RecyclerView.ViewHolder(view) {

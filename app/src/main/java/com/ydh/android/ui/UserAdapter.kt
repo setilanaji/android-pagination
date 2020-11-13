@@ -1,9 +1,11 @@
-package com.ydh.android
+package com.ydh.android.ui
 
 import android.view.ViewGroup
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.ydh.android.common.State
+import com.ydh.android.model.UserModel
 
 class UserAdapter (private val retry: () -> Unit)
     : PagedListAdapter<UserModel, RecyclerView.ViewHolder>(UserDiffCallback){
@@ -14,7 +16,7 @@ class UserAdapter (private val retry: () -> Unit)
     private var state = State.LOADING
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return  UserViewHolder.create(parent)
+        return UserViewHolder.create(parent)
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {

@@ -1,12 +1,13 @@
-package com.ydh.android
+package com.ydh.android.data
 
 import androidx.lifecycle.MutableLiveData
 import androidx.paging.PageKeyedDataSource
+import com.ydh.android.common.State
+import com.ydh.android.model.UserModel
 import io.reactivex.Completable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.functions.Action
-import io.reactivex.internal.operators.flowable.FlowableBlockingSubscribe.subscribe
 import io.reactivex.schedulers.Schedulers
 
 class UserDataSource (

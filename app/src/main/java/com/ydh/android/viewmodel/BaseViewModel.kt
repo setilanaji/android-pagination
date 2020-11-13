@@ -1,4 +1,4 @@
-package com.ydh.android
+package com.ydh.android.viewmodel
 
 import androidx.lifecycle.ViewModel
 

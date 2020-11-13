@@ -1,13 +1,14 @@
-package com.ydh.android
+package com.ydh.android.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.renderscript.ScriptGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.ydh.android.common.State
 import com.ydh.android.databinding.ActivityMainBinding
+import com.ydh.android.viewmodel.UserViewModel
 
 
 class MainActivity : AppCompatActivity() {

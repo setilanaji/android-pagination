@@ -1,6 +1,7 @@
-package com.ydh.android
+package com.ydh.android.data
 
 import com.google.gson.annotations.SerializedName
+import com.ydh.android.model.UserModel
 
 data class UserResponse (
     @SerializedName("page")

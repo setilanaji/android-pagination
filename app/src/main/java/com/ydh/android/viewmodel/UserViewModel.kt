@@ -1,14 +1,15 @@
-package com.ydh.android
+package com.ydh.android.viewmodel
 
-import android.util.Log
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
+import com.ydh.android.common.State
+import com.ydh.android.data.UserDataSource
+import com.ydh.android.data.UserDataSourceFactory
+import com.ydh.android.data.UserService
+import com.ydh.android.model.UserModel
 import io.reactivex.disposables.CompositeDisposable
-import retrofit2.Call
-import retrofit2.Response
 
 
 class UserViewModel : BaseViewModel() {

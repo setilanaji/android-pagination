@@ -1,4 +1,4 @@
-package com.ydh.android
+package com.ydh.android.model
 
 import com.google.gson.annotations.SerializedName
 
