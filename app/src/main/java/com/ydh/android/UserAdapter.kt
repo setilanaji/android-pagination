@@ -1,72 +1,12 @@
 package com.ydh.android
 
-import android.content.Context
-import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 
 class UserAdapter (private val retry: () -> Unit)
-    : PagedListAdapter<UserModel, RecyclerView.ViewHolder>(UserDiffCallback){ //    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
-//
-//        val inflater = LayoutInflater.from(context)
-//        val view: View = inflater.inflate(R.layout.user_item, parent, false)
-//        return UserViewHolder(view, this.itemListener)
-//    }
-//
-//    override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
-//
-//        val user = items[position]
-//        holder.setData(user , position)
-//    }
-//
-//    override fun getItemCount(): Int {
-//        return items.size
-//    }
-//
-//    fun getItem(position: Int): UserModel{
-//        return items[position]
-//    }
-//
-//    interface PostItemListener {
-//        fun onPostClick(userModel: UserModel)
-//    }
-//
-//    inner class UserViewHolder(var view: View, var itemListener: UserAdapter.PostItemListener): RecyclerView.ViewHolder(view), View.OnClickListener{
-//        var name: TextView? = null
-//        var email: TextView? = null
-//        var image: ImageView? = null
-//        var userModel: UserModel? = null
-//
-//        init {
-//
-//            name = view.findViewById(R.id.tv_item_user_name)
-//            email = view.findViewById(R.id.tv_item_user_email)
-//            image = view.findViewById(R.id.image_item_user_profile)
-//            view.setOnClickListener(this)
-//
-//
-//        }
-//        fun setData(userModel: UserModel, position: Int){
-//            userModel?.let {
-//                name?.text  = userModel.firstName + " " + userModel.lastName
-//                email?.text = userModel.email
-//
-//               }
-//            this.userModel = userModel
-//        }
-//
-//        override fun onClick(v: View?) {
-//            val user = getItem(adapterPosition)
-//            this.itemListener.onPostClick(user)
-//            this@UserAdapter.notifyDataSetChanged()
-//        }
-//
-//    }
+    : PagedListAdapter<UserModel, RecyclerView.ViewHolder>(UserDiffCallback){
 
     private val DATA_VIEW_TYPE = 1
     private val FOOTER_VIEW_TYPE = 2
